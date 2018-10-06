@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="source/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="source/css/style.css">
+    <script src="source/js/script.js"></script>
+</head>
+
+<body>
+    <nav style="background:#001362;" class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+        <a class="navbar-brand" href="index.html"><img class="navbar-logo-img" src="source/images/logoblue.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="academics.html">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news--events.html">News & Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="ptsa.html">PTSA</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="student-services.html">Student-Services <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="link-group">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-end">
+                <a name="toggleCollapse" id="toggle-collapse-button" class="btn btn-light" onClick="toggleCollapse()"
+                    role="button">Close All</a>
+            </div>
+            <div class="row link-group-row">
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseAttendance" role="button"
+                            aria-expanded="false" aria-controls="collapseAttendance">
+                            Attendance Matters
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseAttendance">
+                        <div class="list-group list-group-flush">
+                            <a href="http://absencesaddup.org/importance-of-school-attendance/" class="list-group-item list-group-item-action ">
+                                Absences Add Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseDual" role="button"
+                            aria-expanded="false" aria-controls="collapseDual">
+                            Dual Enrollment
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseDual">
+                        <div class="list-group list-group-flush">
+                            <a href="http://undergrad.fiu.edu/de/index.html" class="list-group-item list-group-item-action ">
+                                General Information
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/de-equivalency-list.pdf" class="list-group-item list-group-item-action ">
+                                Course Equivalency List
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/full-time-de-requirements.pdf" class="list-group-item list-group-item-action ">
+                                Full-Time DE Requirements
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/part-time-de-requirements.pdf" class="list-group-item list-group-item-action ">
+                                Part-Time DE Requirements
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/fiu-dual-enrollment-authorization-form.pdf"
+                                class="list-group-item list-group-item-action ">
+                                Dual Enrollment Authorization Form
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseTests" role="button"
+                            aria-expanded="false" aria-controls="collapseTests">
+                            PSAT, NMSQT, SAT & ACT
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseTests">
+                        <div class="list-group list-group-flush">
+                            <a href="http://collegeboard.com/" class="list-group-item list-group-item-action ">
+                                College Board
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/new-psat-nmsqt.pdf" class="list-group-item list-group-item-action ">
+                                Understanding the New PSAT, NMSQT
+                            </a>
+                            <a href="https://www.khanacademy.org/sat?ep_mid=11104618&ep_rid=88916524" class="list-group-item list-group-item-action ">
+                                SAT Preperation & Practce
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/college-board-khan-academy-link-guide.pdf"
+                                class="list-group-item list-group-item-action ">
+                                Free Personalized SAT Preperation
+                            </a>
+                            <a href="https://collegereadiness.collegeboard.org/sat/practice/daily-practice-app" class="list-group-item list-group-item-action ">
+                                Daily Practice for the New SAT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row link-group-row">
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseAlecks" role="button"
+                            aria-expanded="false" aria-controls="collapseAlecks">
+                            Assessments & Learning in Knowledge Spaces (ALEKS)
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseAlecks">
+                        <div class="list-group list-group-flush">
+                            <a href="https://www.aleks.com/" class="list-group-item list-group-item-action ">
+                                General Information
+                            </a>
+                            <a href="http://www.aleks.com/fiu" class="list-group-item list-group-item-action ">
+                                Test Registraction
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseAP" role="button"
+                            aria-expanded="false" aria-controls="collapseAP">
+                            Advanced Placement (AP) Program
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseAP">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/assets/ap-program-marketing-presentation.pdf" class="list-group-item list-group-item-action ">
+                                General Information
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/khan-academy.pdf" class="list-group-item list-group-item-action ">
+                                Kahn Academy Tutorials
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseFlorida" role="button"
+                            aria-expanded="false" aria-controls="collapseFlorida">
+                            Florida Department of Education
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseFlorida">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/assets/academic-advisement-flyer.pdf" class="list-group-item list-group-item-action ">
+                                Academic Advisement - What Parents Should Know
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row link-group-row">
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseSchool" role="button"
+                            aria-expanded="false" aria-controls="collapseSchool">
+                            School Information
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseSchool">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/assets/mast%40fiu-profile-9.27.17.pdf" class="list-group-item list-group-item-action ">
+                                School Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseClep" role="button"
+                            aria-expanded="false" aria-controls="collapseClep">
+                            College Level Educational Program (CLEP)
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseClep">
+                        <div class="list-group list-group-flush">
+                            <a href="https://clep.collegeboard.org/" class="list-group-item list-group-item-action ">
+                                General Information
+                            </a>
+                            <a href="http://undergrad.fiu.edu/cas/testing-center/clep.html" class="list-group-item list-group-item-action ">
+                                Test Registration
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseFLVS" role="button"
+                            aria-expanded="false" aria-controls="collapseFLVS">
+                            Florida Virtual School (FLVS)
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseFLVS">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/assets/faqs-about-virtual-courses.pdf" class="list-group-item list-group-item-action ">
+                                Frequently Asked Questions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row link-group-row">
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseTransportation" role="button"
+                            aria-expanded="false" aria-controls="collapseTransportation">
+                            Student Transportation
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseTransportation">
+                        <div class="list-group list-group-flush">
+                            <a href="http://miamidade.gov/transit" class="list-group-item list-group-item-action ">
+                                Discount Metrobus Fair
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseService" role="button"
+                            aria-expanded="false" aria-controls="collapseService">
+                            Community Service
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseService">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/assets/student-guide-to-community-service-2016.pdf"
+                                class="list-group-item list-group-item-action ">
+                                Student Guide to Community Service
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/community-service-requirements-2016.pdf"
+                                class="list-group-item list-group-item-action ">
+                                Community Service Requirements
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/community-service-project-2016.pdf" class="list-group-item list-group-item-action ">
+                                Community Service Project Proposal
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/community-service-log-2016.pdf" class="list-group-item list-group-item-action ">
+                                Community Service Activity Log
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseInternship" role="button"
+                            aria-expanded="false" aria-controls="collapseInternship">
+                            Internship Program
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseInternship">
+                        <div class="list-group list-group-flush">
+                            <a href="https://docs.wixstatic.com/ugd/36ac9e_ea1641bcaebf48508cde4e74c9e1bbda.pdf" class="list-group-item list-group-item-action ">
+                                Student Handbook
+                            </a>
+                            <a href="https://docs.wixstatic.com/ugd/36ac9e_ad4634588a384c7cabb11e4a26303f40.pdf" class="list-group-item list-group-item-action ">
+                                Provider Handbook
+                            </a>
+                            <a href="http://mastfiu.dadeschools.net/assets/internship-forms-2017-18.pdf" class="list-group-item list-group-item-action ">
+                                Application Forms
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row link-group-row">
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseSuccess" role="button"
+                            aria-expanded="false" aria-controls="collapseSuccess">
+                            Success Skills for Students
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseSuccess">
+                        <div class="list-group list-group-flush">
+                            <a href="http://lsc.cornell.edu/study-skills/cornell-note-taking-system/" class="list-group-item list-group-item-action ">
+                                Cornell Learning Strategies Center
+                            </a>
+                            <a href="http://www.instructables.com/id/How-to-Survive-High-School/" class="list-group-item list-group-item-action ">
+                                How to Survive High School
+                            </a>
+                            <a href="https://www.eschoolnews.com/2011/08/11/ten-skills-every-student-should-learn/"
+                                class="list-group-item list-group-item-action ">
+                                Ten Skills Every Student Should Learn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapseCounseling" role="button"
+                            aria-expanded="false" aria-controls="collapseCounseling">
+                            Counseling
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapseCounseling">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/college-assistance-program-(cap).html" class="list-group-item list-group-item-action ">
+                                College Assistance Program (CAP)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 link-group-member">
+                    <p>
+                        <a class="button btn btn-primary" data-toggle="collapse" href="#collapsePERT" role="button"
+                            aria-expanded="false" aria-controls="collapsePERT">
+                            Post-Secondary Ed Readiness Test (PERT)
+                        </a>
+                    </p>
+                    <div class="collapse show" id="collapsePERT">
+                        <div class="list-group list-group-flush">
+                            <a href="http://mastfiu.dadeschools.net/assets/pert-faqs-fl.pdf" class="list-group-item list-group-item-action ">
+                                General Information
+                            </a>
+                            <a href="http://www.fldoe.org/core/fileparse.php/5592/urlt/0078248-pert-studentstudyguide.pdf"
+                                class="list-group-item list-group-item-action ">
+                                Study Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="academics.html"><i class="fa fa-angle-double-right"></i>Academics</a></li>
+                        <li><a href="news--events.html"><i class="fa fa-angle-double-right"></i>News & Events</a></li>
+                        <li><a href="ptsa.html"><i class="fa fa-angle-double-right"></i>PTSA</a></li>
+                        <li><a href="resources.html"><i class="fa fa-angle-double-right"></i>Resources</a></li>
+                        <li><a href="student-services.html"><i class="fa fa-angle-double-right"></i>Student Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>MAST@FIU</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="http://yourchoicemiami.org/"><i class="fa fa-angle-double-right"></i>Click Here to
+                                Apply</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Off Cycle Aplication</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Principal: Matthew J.
+                                Welker, Ed. D.</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Contact and Location</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>3000 NE 151 Street
+                                Academic 1, Room 395 North Miami, FL 33181</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>(305) 919-4451
+                            </a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>(305) 919-4615 (Fax)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/mastatfiu/"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/mastfiubbc?lang=en"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/mastatfiu/?hl=en"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <a class="navbar-brand" href="index.html"><img class="footer-logo-img" src="source/images/logoblue.jpg"></a>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
